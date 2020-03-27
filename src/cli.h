@@ -26,6 +26,6 @@ typedef struct {
 } cmd_args_t;
 
 bool try_parse(cmd_args_t *args);
-
+void str_rstrip(char s[]);
 #endif
 

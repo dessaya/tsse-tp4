@@ -24,7 +24,7 @@ static bool str_endswith(char s[], char c) {
 }
 
 /** Remove `\r\n`. \return false if no newline characters were found. */
-static void str_rstrip(char s[]) {
+void str_rstrip(char s[]) {
     for (size_t i = 0; s[i]; i++) {
         if (s[i] == '\n' || s[i] == '\r') {
             s[i] = '\0';
